@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.png" rel="icon" type="image/png">
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+
+    <style>
+    .dashboard-container {
+    height: calc(100% - 40px);
+    background-color: #707e96;
+    padding: 30px;
+    }
+  
+    .dashboard-content{
+        padding: 30px;
+        background: #2f4050;
+    }
+    .course-container {
+        background-color: white;
+        height: 350px;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white">
+        <div class="header_inner">
+            <div class="left-side">
+                
+                <!-- Logo -->
+                <div id="logo" class="">
+                    <a  href="/">
+                        <img src="{% static 'images/logo.png' %}" class="header-favatar" style="max-height: 50px; margin: 7.5px;" alt="">
+                </div>
+
+                <div id="logo" class="">
+                    <a href="/">
+                        <b><h1 style="text-transform: uppercase;">Smat School of Engineering</h1></b>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="right-side lg:pr-4">
+
+                <!-- profile -->
+
+                <a href="#">
+                    <img src="{% static 'assets/images/avatars/avatar-2.jpg' %}" class="header-avatar" alt="">
+                </a>
+                <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
+                    <ul>
+                        <li><a href="setting"> Account setting </a> </li>
+                        <li><a href="explore.html">explore </a> </li>
+                        <li><a href="#"> Help </a> </li>
+                        <li><a href="signin"> Log Out</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div id="myrightside" class="rightside" style=""> 
+        <div class="bg-pink-500 " style="height: 40px;">
+            
+        </div>
+
+        <!--Content-->
+        <!-- List of Enrolled Courses -->
+        <div class="dashboard-container">
+            <div class="course-container">
+                <div class="">
+
+                </div>
+            </div>                
+        </div>
+        <!-- Another Enrolled Course-->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-pink-500">
+        <div class="lg:mb-5 py-3 uk-link-reset">
+            <div class="flex flex-col items-center justify-between lg:flex-row max-w-6xl mx-auto lg:space-y-0 space-y-3">
+                <div class="flex space-x-2 text-white uppercase">
+                    <a href="#"> About</a>
+                    <a href="#"> Help</a>
+                    <a href="#"> Terms</a>
+                    <a href="#"> Privacy</a>
+                </div>
+
+
+                <p class="capitalize"> © copyright 2020 by Smat Industries Incorporated</p>
+            </div>
+        </div>
+    </footer>
+</body>

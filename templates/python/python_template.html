@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Python Essentials 2</title>
+                        <link rel="stylesheet" href="/build/658.0c718d36.css" integrity="sha384-kSmaPX58dzP42zXup5C97tkruYIXoVsm1L13A2cyLvDQkhfiSu6dEVQHtvtUW5Hw"><link rel="stylesheet" href="/build/app.87f2717e.css" integrity="sha384-o74PuaryEU0BywB5u7/eg+dy/IVv2vEYGDa+eoT20RllZa5oKrt444/bVwNPex5A">
+        
+
+            <style>
+            .top-navi-bg {
+  /*background: #fff;*/
+  /*height: 30px;*/
+  background-color: #1c272c;
+}
+
+.top-navi .top-navi-item .top-navi-link {
+    /*color: #344759;*/
+    /*font-size: 11px;*/
+    /*font-weight: 500;*/
+    /*margin-right: 16px;*/
+    /*padding: 8px;*/
+    /*text-decoration: none;*/
+    /*-webkit-transition: .4s;*/
+    /*-moz-transition: .4s;*/
+    /*-o-transition: .4s;*/
+    /*transition: .4s;*/
+    color: #fff;
+}
+
+.top-navi .top-navi-item .top-navi-link:hover {
+    color: #facc48;
+}
+
+.navbar {
+  background: #fff!important;
+  color: #344759;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #344759;
+    font-weight: 500;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+
+
+.bgr-footer {
+  background-image: url('../assets/61ee9e2fe3f74388645138.jpg');
+  background-repeat: no-repeat;
+  background-position: right bottom; 
+    background-size: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-address {
+    color: #c6c6c6;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer-address .d-block:first-child {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer .footer-top .footer-section .footer-header {
+    font-size: 16px;
+}
+
+.footer .footer-top .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-top .footer-section ul li a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.badge-item {
+    border: 6px solid #f3f3f3;
+    padding: 30px;
+}
+
+.exam-page .subheading-1 {
+    font-size: 24px;
+}
+
+.exam-page .table th {
+    color: #3f3f3f;
+}
+
+.exam-page .table>:not(:first-child) {
+    border-top: 2px solid #fdb934;
+}
+
+.exam-page .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem #000;
+}
+
+.exam-page .accordion-button:not(.collapsed) {
+    background-color: #fdb934;
+    color: #000;
+    font-weight: bold;
+}
+
+.exam-page .accordion-flush .accordion-item .accordion-button {
+    box-shadow: 0 0 0 0.25rem #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.exam-page .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .badge-item img {
+        margin-top: 30px;
+    }
+}
+
+
+.footer .footer-bottom {
+    background-color: #000;
+    border: solid #3d3d3d;
+    border-width: 1px 0 0;
+    padding: 40px 0;
+}
+
+#navbar .dropdown-menu {
+    font-size: 14px;
+}
+
+#navbar .dropdown-menu .dropdown-item {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#navbar .dropdown-menu hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+        </style>
+    
+            <style>
+            ul.ticked-list {
+  list-style: none;
+}
+
+ul.ticked-list li:before {
+  content: '✓ ';
+  font-weight: bold;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px;
+}
+
+.img-bgr {
+  background-image: url("https://pythoninstitute.org/assets/620f5ee359071890990465.png");
+  background-color: #fff;
+  height: 125px;
+}
+  
+.padding-top-200 {
+    padding-top: 120px;
+}
+
+
+.row-full {
+ width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ left: 50%;
+}
+
+.img-skos {
+  display: block!important;
+}
+
+.negativ {
+  background-color: #344759;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.negativ .container {
+    padding-left: calc(var(--bs-gutter-x)*.5);
+}
+
+.negativ-text {
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://pythoninstitute.org/assets/620fb86ad68f2315377885.jpg");
+
+  /* Set a specific height */
+  min-height: 450px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ left: 50%;
+}
+
+
+
+
+.heading-3 {
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.subheading-2 {
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.subheading-2:after {
+    background-color: #ffcf3e;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin: 4px 10px;
+    width: 100px;
+}
+
+.bn632-hover {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 0px;
+  height: 40px;
+  text-align:center;
+  border: none;
+  background-size: 200% 100%;
+  border-radius: 5px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn26 {
+  background-image: linear-gradient(
+    to right,
+    #245c8a,
+    #2f79b6,
+    #2f79b6,
+    #245c8a
+  );
+}
+
+.bn632:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #ddd;
+  cursor: not-allowed;
+}
+        </style>
+    
+                    <link rel="icon" type="image/png" href="https://pythoninstitute.org/assets/61ee7df904591742689724.png">
+                
+
+
+
+
+
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49926432-9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-49926432-9');
+        </script>
+    </head>
+
+    <body class="python-theme">
+                    <div id="topNavi" class="top-navi top-navi-bg">
+    <div class="container-md">
+        <ul class="ms-auto me-4 my-3 my-lg-0 list-unstyled">
+            <li class="top-navi-item">
+                <a href="https://pythoninstitute.org/terms-and-conditions" class="top-navi-link">Terms and Conditions</a>
+            </li>
+            <li class="top-navi-item">
+                <a href="https://pythoninstitute.org/exam-policies" class="top-navi-link">Exam Policies</a>
+            </li>
+            <li class="top-navi-item">
+                <a href="https://pythoninstitute.org/faq" class="top-navi-link">FAQ</a>
+            </li>
+            <li class="top-navi-item">
+                <a href="https://pythoninstitute.org/support" class="top-navi-link">Support</a>
+            </li>
+            <li class="top-navi-item">
+                <a href="https://pythoninstitute.org/search" class="top-navi-link"><i class="fa fa-search"></i> Search</a>
+            </li>
+            <li class="top-navi-item">
+                <a href="https://ums.edube.org/" class="top-navi-link"><i class="fa fa-shopping-cart"></i>&nbsp;Buy Vouchers</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light-silver">
+    <div class="container-md">
+        <a class="navbar-brand" href="/">
+            <img src="https://pythoninstitute.org/assets/6267ec8fd6fee365109875.svg" alt="" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link me-lg-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/about-pi">Python Institute</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/leadership">Leadership</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/about-python">Python&reg;</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/contact">Contact Us</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link me-lg-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Certifications
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><b>About Python Institute Certifications</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/certification-tracks">Certification Roadmap</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/exam-development">Exam Development</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/why-get-certified">Why Get Certified</a></li>
+                        <li><b>General-Purpose Programming</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/pcep">PCEP&trade; (Entry)</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/pcap">PCAP&trade; (Associate)</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/pcpp1">PCPP1&trade; (Professional 1)</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/pcpp2">PCPP2&trade; (Professional 2)</a></li>
+                        <li><b>Testing</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/pcat">PCAT&trade; (Associate)</a></li>
+                        <li><b>Data Analytics</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/pcad">PCAD&trade; (Associate)</a></li>
+                        <hr>
+                        <li><b>Credential Verification</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/credential-verification">Verify Credentials</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/digital-badging">Digital Badging</a></li>
+
+
+                    </ul>
+                </li>
+                
+<li class="nav-item dropdown">
+                    <a class="nav-link me-lg-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Study Resources
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><b>About Python Institute Courses</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/study-resources">Why learn Python?</a></li>
+                        <li><b>General-Purpose Programming</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/python-essentials-1">Python Essentials 1 (Beginner)</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/python-essentials-2">Python Essentials 2 (Intermediate)</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/python-professional-1">Python Professional (Advanced)</a></li>
+                        <li><b>Testing</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/python-for-testing-essentials">Testing Essentials with Python<br>(Intermediate)</a></li>
+                        <li><b>Data Analytics</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/python-for-data-analysis-essentials">Data Analysis Essentials with Python<br>(Intermediate)</a></li>
+                        <hr>
+                        <li><b>Collaborative Projects</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/netacad">Cisco Networking Academy</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/skills-for-all">Skills For All</a></li>
+                        <hr>
+                        <li><b>Resource Partner Content</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/publishing-partners">Publishing Partners (Paid)</a></li>
+
+                    </ul>
+                </li>
+                    
+                    
+<li class="nav-item dropdown">
+                    <a class="nav-link me-lg-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Community
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><b>Community</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/community">Join the Community</a></li>
+                        <li><b>Partners</b></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/partners">Partner Programs</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/education-partner-program">Education Partners</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/testing-service-partner-program">Testing Service Partners</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/publishing-partner-program">Publishing Partners</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/channel-partner-program">Channel Partners</a></li>
+                        <li><a class="dropdown-item" href="https://pythoninstitute.org/strategic-partners">Strategic Partners</a></li>
+
+
+                    </ul>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <div class="container padding-top-200 margin-bottom-100">
+        <div class="row">
+<div class="col-sm-6">
+
+<h1 class="heading-1">Python Essentials 2</h1>
+
+<p><i>Dive into the more advanced Python concepts, learn Object-Oriented Programming, and prepare for the PCAP – Certified Associate Python Programmer certification.</i></p>
+
+<p>This intermediate-level course gives you an opportunity to dive deeper into Python programming, and learn how to analyze and model real-life problems in Object-Oriented Programming categories.</p>
+
+<p>Having completed the course, you will be prepared to attempt the qualification <a href="https://pythoninstitute.org/pcap">PCAP – Certified Associate in Python Programming</a> certification, and you will be equipped with the skills and knowledge essential to continue to more advanced, more specialized, and higher paying <b>Software Development, Security, Networking, IoT, and engineering roles</b>.</p>
+
+<h4>Key skills you will learn</h4>
+
+<p>Sign up for Python Essentials 2, and learn these core skills:</p>
+<ul>
+<li>Python</li>
+<li>Computer Programming</li>
+<li>Algorithmic Thinking</li>
+<li>Analytical Thinking</li>
+<li>Design, Develop, and Debug Multi-Module applications</li>
+<li>Best Practices in Programming</li>
+<li>Solutions Architecture</li>
+<li>Object-Oriented Programming</li>
+</ul>
+</div>
+
+
+<div class="col-sm-6">
+<br>
+
+<span><p class="subheading-2">INTERMEDIATE</p>
+<!--<h3 class="heading-3">PE1</h3> -->
+<br></span>
+
+<div class="card mb-3">
+  <img src="https://pythoninstitute.org/assets/6226196f85636261704502.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Python Essentials ‒ Part 2 (Intermediate)</h5>
+        <p class="card-text"><small><strong>Level: <span style="color:#214478">Intermediate</span></strong> | <strong>Length:</strong> 8 weeks (Recommended: 7-8 hours/week) | <strong>Language:</strong> English, Spanish | <strong>Cost:</strong> Free</small></p>
+        <p class="card-text">This course is the second in a 2-course series that will prepare you for the <i>PCAP – Certified Associate in Python Programming</i> certification exam at Pearson VUE.</p>
+        <p class="card-text">The course picks up where <i>Python Essentials – Part 1</i> leaves off. Its main goal is to teach you the skills related to the <strong>more advanced aspects of Python programming</strong>, including modules, packages, exceptions, file processing, as well as <strong>general coding techniques and object-oriented programming</strong> (OOP).</p>
+        <p class="card-text">The course is recommended for aspiring developers who are interested in pursuing careers connected with <strong>Software Development</strong>, <strong>Security</strong>, <strong>Networking</strong>, and the <strong>Internet of Things</strong> (IoT).</p>
+
+        <div class="row">
+        <div class="col-sm-8">
+        <p class="card-text">For more information about the course, click here:</p>
+        </div>
+        <div class="col-sm-4">
+        <center><a href="https://edube.org/study/pe2"><button class="bn632-hover bn26">SIGN UP</button></a></center>
+        </div>
+        </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="row-full">
+<img class="img-skos" src="https://pythoninstitute.org/assets/620fa126a4d71071437588.png" width=100%>
+</div>
+
+<div class="negativ row-full">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<br>
+
+<p>Python Essentials 2 has been designed for intermediate-level learners interested in developing a more in-depth understanding of Python, gaining more confidence in using it for general-purpose programming projects, and laying out a solid foundation for further studies in more specialized areas, such as testing, data analysis, machine learning, IoT, and web development. It will particularly appeal to:</p>
+
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-check-square" style="font-size:30px; color:#fffff;"></i></span><div style="margin-left:22px;">aspiring programmers and learners interested in learning programming <b>for fun and job-related tasks</b></div></li>
+<br>
+<li><span class="fa-li"><i class="fas fa-check-square" style="font-size:30px; color:#fffff;"></i></span><div style="margin-left:22px;">learners looking to gain fundamental skills and knowledge for a junior-level job role as a <b>software developer</b>, <b>data analyst</b>, or <b>tester</b></div></li>
+<br>
+<li><span class="fa-li"><i class="fas fa-check-square" style="font-size:30px; color:#fffff;"></i></span><div style="margin-left:22px;"><b>industry professionals</b> wishing to explore technologies that are connected with Python, or to utilize it as a foundation in <b>Networking, Internet-of-Things, and Security</i> areas</b></div></li>
+<br>
+<li><span class="fa-li"><i class="fas fa-check-square" style="font-size:30px; color:#fffff;"></i></span><div style="margin-left:22px;">aspiring programmers, learners, and industry professionals looking to acquire essential Python skills for further <b>self-development</b> in the areas of AI and machine learning, data analytics, data visualization, application programming, web development, game development, network programming, Internet-of-Things, testing and automation, and cybersecurity</div></li>
+<br>
+<li><span class="fa-li"><i class="fas fa-check-square" style="font-size:30px; color:#fffff;"></i></span><div style="margin-left:22px;"><b>team leaders, product managers, and project managers</b> who want to understand the terminology and processes in the software development cycle to more effectively manage and communicate with production and development teams</div></li>
+</ul>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+
+<br>
+
+<h4>Prerequisites</h4>
+
+<p>This course has been designed for learners who are already familiar with the essentials of Python, universal computer programming concepts like data types, containers, functions, conditions, and loops, and the basics of procedural, structural, and functional programming.</p>
+
+<p>Experience required: completion of the <a href="./python-essentials-1">Python Essentials 1</a> course, or equivalent experience.</p>
+
+<h4>What you will know after the course</h4>
+
+<p>By the end of the course, you will be able to:</p>
+
+<ul>
+<li>design, develop, debug, execute, and refactor multi-module computer programs written in Python;</li>
+<li>analyse and model real-life problems in OOP categories;</li>
+<li>use the potential of Python in everyday applications, including IoT and DIY activities;</li>
+<li>understand the role of a programmer in the software development process;</li>
+<li>understand the differences between procedural and OOP approaches, and be able to differentiate the pros and cons of both techniques;</li>
+<li>create, develop, and improve your own programming portfolio to increase your value in the job market;</li>
+<li>continue your professional development at an advanced and more specialized level with the <i>Python Professional 1</i> course series.</li>
+</ul>
+
+
+
+</div>
+</div>
+
+
+<a href="#" id="backToTop" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    </div>
+
+    <footer class="footer bgr-footer">
+    <div style="background-color: black!important; padding-bottom: 30px;" class="footer-top bgr-footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-sm-8 col-md-5 col-lg-3 d-flex align-items-center">
+                    <div class="margin-bottom-50">
+                        <div class="footer-logo margin-bottom-30">
+                            <a href="#"><img src="https://pythoninstitute.org/assets/61e94ab03c704674847077.png" width=65% alt="Logo"></a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/pythoninstitute.org"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/pythoninstitute"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/pythoninstitute/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/channel/UC2IRXg1rRD2yiig1Sqbf6iQ/featured"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 col-lg-2">
+                    <div class="footer-section margin-bottom-50">
+                        <h5 class="footer-header">Terms & Policies</h5>
+                        <ul>
+                            <li><a href="https://pythoninstitute.org/terms-and-conditions">Terms and Conditions</a></li>
+                            <li><a href="https://pythoninstitute.org/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="https://pythoninstitute.org/cookie-policy">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-4 col-lg-2">
+                    <div class="footer-section margin-bottom-50">
+                        <h5 class="footer-header">Links & Resources</h5>
+                        <ul>
+                            <li><a href="https://edube.org/">Edube Interactive &trade;</a></li>
+                            <li><a href="https://edube.org/sandbox">Sandbox</a></li>
+                            <li><a href="https://ums.edube.org/store">Voucher Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 col-lg-3 footer-address">
+                    <span class="d-block margin-bottom-10">
+                        OpenEDG | Open Education and Development Group, LLC
+                        </span>
+                    
+                    <span class="d-block"><b><u>North America</u></b>: 1013 Centre</span>
+                    <span class="d-block">Road, Suite 405, Wilmington, DE,</span>
+                    <span class="d-block">19805, United States</span>
+                    <span class="d-block">+1 (302) 498-90-37</span>
+                    
+                    <span class="d-block margin-top-10"><b><u>Europe</u></b>: Jagiellonska 67, West</span>
+                    <span class="d-block">Pomerania, Szczecin, 70-382,</span>
+                    <span class="d-block">Poland</span>
+                    <span class="d-block">+49-333-33-50-98-09</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-12">
+                    <div class="footer-copyright text-center">
+                        <p>© Copyright Open Education and Development Group 2012-2022. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+                        <script src="/build/runtime.5e097f3e.js" defer integrity="sha384-e06kNfSMwrDbbsQd+ogx2TETpA6T9v60sgED7dTmJNbiYUlCnVHjY1af85WMeBYW"></script><script src="/build/658.678e6aaf.js" defer integrity="sha384-OEZ8s/73iZ5yqPJ2n4FkoeUeYvUyt3LfOnJCN5djfhpoLvgcgPWA4/8KexxltDgw"></script><script src="/build/605.654fc373.js" defer integrity="sha384-JtdkfBlt/jixfu8iLPZ0ySq7Z1lFlOrUxpUX/8+7ifdlmJQ7Ln60tYFY08rQc2KD"></script><script src="/build/app.9322bf34.js" defer integrity="sha384-/ORuAS+XXLBwHDKk7gy3VjrtJY06kVS0p5yHecreQ3U3kxwcjST/rWOqrkdaEEo2"></script>
+        
+
+    
+        </body>
+</html>
