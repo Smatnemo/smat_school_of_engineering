@@ -1,0 +1,1 @@
+web: gunicorn smat_school_of_engineering.wsgi
