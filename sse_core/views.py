@@ -1528,54 +1528,54 @@ def python_90_4(request):
 
 
 # Cpp views. This has links to all the Cpp pages
-def cpp_1(request):
+def Cpp_1_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'cpp_1.html')
+    return render(request, 'Cpp_1_1.html')
 
-def cpp_2(request):
+def Cpp_2_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'cpp_2.html')
+    return render(request, 'Cpp_2_1.html')
 
-def cpp_3(request):
+def Cpp_3_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'cpp_3.html')
+    return render(request, 'Cpp_3_1.html')
 
-def cpp_4(request):
+def Cpp_4_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'cpp_4.html')
+    return render(request, 'Cpp_4_1.html')
 
-def cpp_5(request):
+def Cpp_5_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'cpp_5.html')
+    return render(request, 'Cpp_5_1.html')
 
-def cpp_6(request):
+def Cpp_6_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'cpp_6.html')
+    return render(request, 'Cpp_6_1.html')
 
 
 
 
 # C views. This has links to all the Cpp pages
-def c_1(request):
+def C_1_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'c_1.html')
+    return render(request, 'C_1_1.html')
 
-def c_2(request):
+def C_2_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'c_2.html')
+    return render(request, 'C_2_1.html')
 
-def c_3(request):
+def C_3_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'c_3.html')
+    return render(request, 'C_3_1.html')
 
-def c_4(request):
+def C_4_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'c_4.html')
+    return render(request, 'C_4_1.html')
 
-def c_5(request):
+def C_5_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'c_5.html')
+    return render(request, 'C_5_1.html')
 
-def c_6(request):
+def C_6_1(request):
     # write code to make sure this page is only returned after signin
-    return render(request, 'c_6.html')
+    return render(request, 'C_6_1.html')
