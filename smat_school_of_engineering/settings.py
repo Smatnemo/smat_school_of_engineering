@@ -60,6 +60,7 @@ TEMPLATES = [
                  os.path.join(BASE_DIR, 'templates/python'), 
                  os.path.join(BASE_DIR, 'templates/cpp'), 
                  os.path.join(BASE_DIR, 'templates/c'),
+                 os.path.join(BASE_DIR, 'templates/embedded_c'),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -1579,3 +1579,128 @@ def C_5_1(request):
 def C_6_1(request):
     # write code to make sure this page is only returned after signin
     return render(request, 'C_6_1.html')
+
+
+
+
+
+# Embedded C pages
+def day_1(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'intro.html')
+
+def day_2(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_2_var.html')
+
+def day_3(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_3_address_var.html')
+
+def day_4(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_4_func.html')
+
+def day_5(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_5_microcontrollers.html')
+
+def day_6(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_6_build_process.html')
+
+def day_7(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_7_float.html')
+
+def day_8(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_8_pointers.html')
+
+def day_9(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_9_operators.html')
+
+def day_10(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_10_decision_making.html')
+
+def day_11(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_11_bitwise.html')
+
+def day_12(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_12_blink.html')
+
+def day_13(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_13_shift_operators.html')
+
+def day_14(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_14_looping.html')
+
+def day_15(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_15_type_qualifier.html')
+
+def day_16(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_16_pinread.html')
+
+def day_17(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_17_volatile.html')
+
+def day_18(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_18_structures.html')
+
+def day_19(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_19_usage_of_bitfield.html')
+
+def day_20(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_20_keypad_interfacing.html')
+
+def day_21(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_21_Arrays.html')
+
+def day_22(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_22_strings.html')
+
+def day_23(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_23_pre_processor.html')
+
+def day_24(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_24_lcd_programming.html')
+
+def day_25(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_25_uart.html')
+
+def day_26(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_26_spi_tft.html')
+
+def day_27(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_27_interview_questions.html')
+
+def day_28(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_28_spi_adc.html')
+
+def day_29(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_29_interview_questions.html')
+
+def day_30(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_30_graduation.html')
