@@ -17,76 +17,8 @@
 
     <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
 
-    <style>
-        .right-side-topnav {
-            width: 100vw; 
-            height: 40px; 
-            position: fixed; 
-            top: 65px; 
-            z-index: 1;
-        }
+    
 
-        /* --------------------- */
-/* Side Nav Menu Decorations */
-/* --------------------- */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.flex-child {
-  flex: 50%;
-  /* border: 2px solid yellow; */
-  background-color: white;
-  padding: 30px;
-} 
-
-@media (max-width: 800px) {
-  .flex-child {
-      flex: 100%;
-  }
-}
-
-.lesson-container {
-  position: absolute;
-  top: 105px; 
-  overflow: scroll; 
-  transition: 0.5s;
-}
-
-.menulinks{
-  width: 250px;
-  /* background-color: blue; */
-  height: 0px;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.btn {
-  width: 250px;
-  height: 44px;
-  cursor: pointer; 
-  background-color: white; 
-  padding: 10px; 
-  padding-left: 40px; 
-  padding-right: 0;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: rgb(72, 72, 182);
-}
-
-/* When you mouse over the navigation links, change their color */
-.btn:hover a {
-color: #f1f1f1;
-}
-
-    </style>
 </head>
 
 <body>
