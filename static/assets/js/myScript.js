@@ -9,10 +9,12 @@ function myFunction(x) {
       document.getElementById("mySidenav5").style.width = "0";
       document.getElementById("mySidenav6").style.width = "0";
       document.getElementById("myrightside").style.marginLeft = "0";
+      document.getElementById("myrightside").style.marginRight = "0";
       document.getElementById("lessonContainer").style.marginRight = "0";
     } else {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("myrightside").style.marginLeft = "250px";
+      document.getElementById("myrightside").style.marginRight = "-250px";
       document.getElementById("lessonContainer").style.marginRight = "-250px";
     }
   //   document.getElementById("mySidenav").style.width = "250px";
@@ -70,5 +72,18 @@ function w3_getStyleValue(elmnt,style) {
         return window.getComputedStyle(elmnt,null).getPropertyValue(style);
     } else {
         return elmnt.currentStyle[style];
+    }
+}
+
+function openclose(x, y) {
+    x.classList.toggle("change");
+    if (document.getElementById(y).style.width == "250px") {
+        document.getElementById(y).style.width = "0";
+        ocument.getElementById("myrightside").style.marginLeft = "0";
+        document.getElementById("myrightside").style.marginRight = "0";
+    } else {
+        document.getElementById(y).style.width = "250px";
+        document.getElementById("myrightside").style.marginLeft = "250px";
+        document.getElementById("myrightside").style.marginRight = "-250px";
     }
 }

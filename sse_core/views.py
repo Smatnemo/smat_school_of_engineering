@@ -1585,6 +1585,10 @@ def C_6_1(request):
 
 
 # Embedded C pages
+def embedded_c(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'embedded_c.html')
+
 def day_1(request):
     # write code to make sure this page is only returned after signin
     return render(request, 'intro.html')
