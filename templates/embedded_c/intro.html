@@ -428,10 +428,24 @@
                                 </p>
                                 <br/>
                                 <br/>
+                                <h1 class="course-header-2">Embedded Software</h1>
+                                <hr class="course-header-line-2">
+                                <p>
+                                    Embedded Software refers to the code written to interact with hardware. The code is usually written
+                                     in the
+                                </p>
+                                <br/>
+                                <br/>
+
+
                                 <h1 class="course-header-2">Embedded C</h1>
                                 <hr class="course-header-line-2">
                                 <p>Embedded C is a slight variation of C used to program microcontrollers and microprocessors.
-                                    It is very similar to C Programming Language. There are other programming languages used
+                                    It is very similar to C Programming Language.
+
+                                    <h2 class="course-header-2"> Embedded Programming Languages</h2> 
+                                    <hr class="course-header-line-2">
+                                    There are other programming languages used
                                     programming embedded systems. Some of them are:
                                     <ul>
                                         <li>
@@ -476,20 +490,64 @@
                                        </li> 
                                        <li>
                                             <b>Microcontroller:</b> A micro-controller comprises a microprocessor and other peripherals such as memory,
-                                            and Input and Output peripherals on a single chip.
+                                            and Input and Output peripherals on a single chip. In a microcontroller, you cannot customize the peripherals.
                                        </li>
                                        <li>
                                             <b>Complex Programmable Logic Devices:</b> CPLDs are not as complex as FPGAs but more complex than Simple 
-                                            Programmable Logic Devices. These Devices can be programmed Hardware Description Language.
+                                            Programmable Logic Devices. They are reconfigurable. This means that the peripherals can be customised.
+                                             CPLDs are control-oriented and can be used just as 
+                                            microcontrollers. These Devices can be programmed using Hardware Description Languages. There is no processor
+                                            core on the CPLD. The parts or blocks on a CPLD are:
+                                            <dd>
+                                                - Logic blocks
+                                            </dd>
+                                            <dd>
+                                                - I/O blocks
+                                            </dd>
+                                            <dd>
+                                                - Clock routing
+                                            </dd>
+                                            <dd>
+                                                - Routing matrix
+                                            </dd>
+                                            <dd>
+                                                - Memory: Non-volatile EEPROM memory
+                                            </dd>
                                        </li>
                                        <li>
                                             <b>Field Programmable Gate Arrays:</b> These are integrated circuits that can be manipulated or configured by a
-                                            customer after manufacturing.
+                                            customer after manufacturing. This means they have customizable design to optimize design for speed and cost. These are data path-oriented and can perform complex mathematical calculations just 
+                                            as DSPs. FPGAs can be programmed using C programming language. FPGAs are fully parallel in implementation. The parts of an FPGA are:
+                                            <dd>
+                                                - Logic blocks
+                                            </dd>
+                                            <dd>
+                                                - I/O blocks
+                                            </dd>
+                                            <dd>
+                                                - Clock routing
+                                            </dd>
+                                            <dd>
+                                                - Routing matrix
+                                            </dd>
+                                            <dd>
+                                                - Memory
+                                            </dd>
+                                            <dd>
+                                                - Multipliers/DSP blocks
+                                            </dd>
+                                            <dd>
+                                                - Processor: There can be either soft or hard core on an FPGA. The soft core can be created using software
+                                                while the hard core is fabricated in the lab. Software can be used to create multiple cores.
+                                            </dd>
+                                            <br>
+                                            FPGAs have certain advantages over DSPs. Since they are reconfigurable, they can take up less space on boards(PCBs).
                                        </li>
                                        <li>
                                             <b>Digital Signal Processors:</b> These are specialized microprocessors designed to processor real-world
                                              signals like voice, audio, video, temperature, pressure, or position that have been converted to Digital
-                                             signals for mathematical manipulations.
+                                             signals for mathematical manipulations. DSPs are specialized processors so they are sequential in nature.
+                                             They go through a fetch, decode and execute cycle.
                                        </li>
                                        <li>
                                             <b>Central Processing Unit:</b> Central Processing Units are arithmetic and logic devices that
@@ -500,10 +558,15 @@
                                             specific tasks like performing computations on a lot of data or graphics. 
                                        </li>
                                        <li>
-                                            <b>System-on-Chip:</b> Examples: Snapdragon, Raspberry Pi
+                                            <b>System-on-Chip:</b> Mobile phones are a great example of System-on-chip. This means having two or more
+                                            on a single chip. On mobile phones, there can be different kinds of processors, CPU, GPU, DSP and etcetera.
+                                            When there are identical processors it is called symmetric with one operating system and a common shared memory.
+                                            A chip with different processors, instruction sets, different operating systems, and possibly without shared
+                                             memory is called Asymmetric. Examples: Snapdragon, Raspberry Pi
                                        </li>
                                        <li>
-                                            <b>Application Specific Integrated Circuits:</b> 
+                                            <b>Application Specific Integrated Circuits:</b>  These are special chips that are purpose-built for an application.
+                                            The function of the chip cannot be changed after it has been built. 
                                        </li>
                                     </ol>
 
