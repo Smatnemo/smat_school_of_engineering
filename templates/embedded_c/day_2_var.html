@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="favicon.png" rel="icon" type="image/png">
-    <title>Python</title>
+    <title>Embedded C</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,76 +17,8 @@
 
     <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
 
-    <style>
-        .right-side-topnav {
-            width: 100vw; 
-            height: 40px; 
-            position: fixed; 
-            top: 65px; 
-            z-index: 1;
-        }
+    
 
-        /* --------------------- */
-/* Side Nav Menu Decorations */
-/* --------------------- */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.flex-child {
-  flex: 50%;
-  /* border: 2px solid yellow; */
-  background-color: white;
-  padding: 30px;
-} 
-
-@media (max-width: 800px) {
-  .flex-child {
-      flex: 100%;
-  }
-}
-
-.lesson-container {
-  position: absolute;
-  top: 105px; 
-  overflow: scroll; 
-  transition: 0.5s;
-}
-
-.menulinks{
-  width: 250px;
-  /* background-color: blue; */
-  height: 0px;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.btn {
-  width: 250px;
-  height: 44px;
-  cursor: pointer; 
-  background-color: white; 
-  padding: 10px; 
-  padding-left: 40px; 
-  padding-right: 0;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: rgb(72, 72, 182);
-}
-
-/* When you mouse over the navigation links, change their color */
-.btn:hover a {
-color: #f1f1f1;
-}
-
-    </style>
 </head>
 
 <body>
@@ -141,16 +73,16 @@ color: #f1f1f1;
                 <!-- Module 1 -->
                 <div id="mySidenav1" class="sidenav bg-pink-500">
                     <div class="menuitem" onclick="closeNav('mySidenav1')"><a href="javascript:void(0)" class="closebtn menuitemlink" >&laquo; Back</a></div>
-                    <div class="menuitem" onclick="openmenuitems(1)"><a href="#" class="menuitemlink"> Introduction to Python</a></div>
+                    <div class="menuitem" onclick="openmenuitems(1)"><a href="#" class="menuitemlink"> Day 1</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
-                        <div class="btn" ><a href="python_1_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_1_2">Unit 2</a></div>
+                        <div class="btn" ><a href="intro">Intro to Embedded Systems</a></div>
+                        <div class="btn" ><a href="intro_embedded_c">Intro to Embedded C</a></div>
                         <div class="btn" ><a href="python_1_3">Unit 3</a></div>
                         <div class="btn" ><a href="python_1_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(2)"><a href="#" class="menuitemlink"> Installing Python</a></div>
+                    <div class="menuitem" onclick="openmenuitems(2)"><a href="#" class="menuitemlink"> Day 2</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_2_1">Unit 1</a></div>
@@ -159,7 +91,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_2_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(3)"><a href="#" class="menuitemlink"> Numbers</a></div>
+                    <div class="menuitem" onclick="openmenuitems(3)"><a href="#" class="menuitemlink"> Day 3</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_3_1">Unit 1</a></div>
@@ -168,7 +100,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_3_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(4)"><a href="#" class="menuitemlink"> Strings</a></div>
+                    <div class="menuitem" onclick="openmenuitems(4)"><a href="#" class="menuitemlink"> Day 4</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_4_1">Unit 1</a></div>
@@ -177,110 +109,20 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_4_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(5)"><a href="#" class="menuitemlink"> Slicing up Strings</a></div>
+                    <div class="menuitem" onclick="openmenuitems(5)"><a href="#" class="menuitemlink"> Day 5</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
-                        <div class="btn" ><a href="python_5_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_5_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_5_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_5_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(6)"><a href="#" class="menuitemlink"> Installing Pycharm</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_6_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_6_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_6_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_6_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(7)"><a href="#" class="menuitemlink"> If elif else</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_7_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_7_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_7_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_7_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(8)"><a href="#" class="menuitemlink"> For Loop</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_8_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_8_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_8_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_8_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(9)"><a href="#" class="menuitemlink"> Range and While</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_9_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_9_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_9_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_9_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(10)"><a href="#" class="menuitemlink"> Lists</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_10_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_10_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_10_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_10_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(11)"><a href="#" class="menuitemlink"> Comments and Break</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_11_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_11_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_11_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_11_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(12)"><a href="#" class="menuitemlink"> Continue</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_12_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_12_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_12_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_12_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(13)"><a href="#" class="menuitemlink"> Functions</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_13_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_13_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_13_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_13_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(14)"><a href="#" class="menuitemlink"> Return Values</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_14_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_14_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_14_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_14_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(15)"><a href="#" class="menuitemlink"> Default Values for Arguments</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_15_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_15_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_15_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_15_4">Unit 4</a></div>
+                        <div class="btn" ><a href="python_4_1">Unit 1</a></div>
+                        <div class="btn" ><a href="python_4_2">Unit 2</a></div>
+                        <div class="btn" ><a href="python_4_3">Unit 3</a></div>
+                        <div class="btn" ><a href="python_4_4">Unit 4</a></div>
                     </div>
                 </div>
 
                 <!-- Module 2 -->
                 <div id="mySidenav2" class="sidenav bg-pink-500">
                     <div class="menuitem" onclick="closeNav('mySidenav2')"><a href="javascript:void(0)" class="closebtn menuitemlink">&laquo; Back</a></div>
-                    <div class="menuitem" onclick="openmenuitems(16)"><a href="#" class="menuitemlink"> Variable Scope</a></div>
+                    <div class="menuitem" onclick="openmenuitems(16)"><a href="#" class="menuitemlink"> Day 6</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_16_1">Unit 1</a></div>
@@ -289,7 +131,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_16_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(17)"><a href="#" class="menuitemlink"> Keyword Arguments</a></div>
+                    <div class="menuitem" onclick="openmenuitems(17)"><a href="#" class="menuitemlink"> Day 7</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_17_1">Unit 1</a></div>
@@ -298,7 +140,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_17_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(18)"><a href="#" class="menuitemlink" > Flexible Number of Arguments</a></div>
+                    <div class="menuitem" onclick="openmenuitems(18)"><a href="#" class="menuitemlink" > Day 8</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_18_1">Unit 1</a></div>
@@ -307,7 +149,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_18_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(19)"><a href="#" class="menuitemlink"> Unpacking Arguments</a></div>
+                    <div class="menuitem" onclick="openmenuitems(19)"><a href="#" class="menuitemlink"> Day 9</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_19_1">Unit 1</a></div>
@@ -316,110 +158,21 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_19_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(20)"><a href="#" class="menuitemlink" > My Trip to Walmarts and Sets</a></div>
+                    <div class="menuitem" onclick="openmenuitems(20)"><a href="#" class="menuitemlink" > Day 10</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_20_1">Unit 1</a></div>
                         <div class="btn" ><a href="python_20_2">Unit 2</a></div>
                         <div class="btn" ><a href="python_20_3">Unit 3</a></div>
                         <div class="btn" ><a href="python_20_4">Unit 4</a></div>
-                    </div>
+                    </div>            
 
-                    <div class="menuitem" onclick="openmenuitems(21)"><a href="#" class="menuitemlink"> Dictionary</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_21_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_21_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_21_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_21_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(22)"><a href="#" class="menuitemlink"> Modules</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_22_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_22_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_22_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_22_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(23)"><a href="#" class="menuitemlink"> Download an Image From the Web</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_23_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_23_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_23_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_23_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(24)"><a href="#" class="menuitemlink"> How To Read and Write Files</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_24_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_24_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_24_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_24_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(25)"><a href="#" class="menuitemlink"> Downloading Files From the Web</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_25_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_25_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_25_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_25_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(26)"><a href="#" class="menuitemlink"> How To Build a Web Crawler - 1</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_26_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_26_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_26_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_26_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(27)"><a href="#" class="menuitemlink"> How To Build a Web Crawler - 2</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_27_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_27_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_27_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_27_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(28)"><a href="#" class="menuitemlink"> How To Build a Web Crawler - 3</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_28_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_28_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_28_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_28_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(29)"><a href="#" class="menuitemlink"> You are the Only Exception</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_29_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_29_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_29_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_29_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(30)"><a href="#" class="menuitemlink"> Clauses and Objects</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_30_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_30_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_30_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_30_4">Unit 4</a></div>
-                    </div>
                 </div>
 
                 <!-- Module 3 -->
                 <div id="mySidenav3" class="sidenav bg-pink-500">
                     <div class="menuitem" onclick="closeNav('mySidenav3')"><a href="javascript:void(0)" class="closebtn">&laquo; Back</a></div>
-                    <div class="menuitem" onclick="openmenuitems(31)"><a href="#" class="menuitemlink"> Init</a></div>
+                    <div class="menuitem" onclick="openmenuitems(31)"><a href="#" class="menuitemlink"> Day 11</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_31_1">Unit 1</a></div>
@@ -428,7 +181,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_31_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(32)"><a href="#" class="menuitemlink"> Class vs Instance Variables</a></div>
+                    <div class="menuitem" onclick="openmenuitems(32)"><a href="#" class="menuitemlink"> Day 12</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_32_1">Unit 1</a></div>
@@ -437,7 +190,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_32_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(33)"><a href="#" class="menuitemlink"> Inheritance</a></div>
+                    <div class="menuitem" onclick="openmenuitems(33)"><a href="#" class="menuitemlink"> Day 13</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_33_1">Unit 1</a></div>
@@ -446,7 +199,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_33_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(34)"><a href="#" class="menuitemlink"> Multiple Inheritance</a></div>
+                    <div class="menuitem" onclick="openmenuitems(34)"><a href="#" class="menuitemlink"> Day 14</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_34_1">Unit 1</a></div>
@@ -455,7 +208,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_34_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(35)"><a href="#" class="menuitemlink"> Threading</a></div>
+                    <div class="menuitem" onclick="openmenuitems(35)"><a href="#" class="menuitemlink"> Day 15</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_35_1">Unit 1</a></div>
@@ -464,95 +217,6 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_35_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(36)"><a href="#" class="menuitemlink"> Word Frequency Counter - 1</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_36_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_36_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_36_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_36_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(37)"><a href="#" class="menuitemlink"> Word Frequency Counter - 2</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_37_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_37_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_37_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_37_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(38)"><a href="#" class="menuitemlink"> Word Frequency Counter - 3</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_38_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_38_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_38_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_38_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(39)"><a href="#" class="menuitemlink"> Unpack List or Tuples</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_39_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_39_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_39_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_39_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(40)"><a href="#" class="menuitemlink"> Zip(and yeast Infection Story)</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_40_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_40_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_40_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_40_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(41)"><a href="#" class="menuitemlink"> Lambda</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_41_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_41_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_41_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_41_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(42)"><a href="#" class="menuitemlink"> Min, Max, and Sorting Dictionaries</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_42_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_42_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_42_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_42_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(43)"><a href="#" class="menuitemlink"> Pillow</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_43_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_43_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_43_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_43_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(44)"><a href="#" class="menuitemlink"> Cropping Images</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_44_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_44_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_44_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_44_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(45)"><a href="#" class="menuitemlink"> Combine Images Together</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_45_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_45_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_45_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_45_4">Unit 4</a></div>
-                    </div>
 
                 </div>
 
@@ -560,7 +224,7 @@ color: #f1f1f1;
                 <!-- Module 4 -->
                 <div id="mySidenav4" class="sidenav bg-pink-500">
                     <div class="menuitem" onclick="closeNav('mySidenav4')"><a href="javascript:void(0)" class="closebtn">&laquo; Back</a></div>                   
-                    <div class="menuitem" onclick="openmenuitems(46)"><a href="#" class="menuitemlink"> Getting Individual Channels</a></div>
+                    <div class="menuitem" onclick="openmenuitems(46)"><a href="#" class="menuitemlink"> Day 16</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_46_1">Unit 1</a></div>
@@ -569,7 +233,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_46_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(47)"><a href="#" class="menuitemlink"> Awesome Merge Effect</a></div>
+                    <div class="menuitem" onclick="openmenuitems(47)"><a href="#" class="menuitemlink"> Day 17</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_47_1">Unit 1</a></div>
@@ -578,7 +242,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_47_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(48)"><a href="#" class="menuitemlink"> Basic Transformations</a></div>
+                    <div class="menuitem" onclick="openmenuitems(48)"><a href="#" class="menuitemlink"> Day 18</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_48_1">Unit 1</a></div>
@@ -587,7 +251,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_48_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(49)"><a href="#" class="menuitemlink"> Modes and Filters</a></div>
+                    <div class="menuitem" onclick="openmenuitems(49)"><a href="#" class="menuitemlink"> Day 19</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_49_1">Unit 1</a></div>
@@ -596,7 +260,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_49_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(50)"><a href="#" class="menuitemlink"> Struct</a></div>
+                    <div class="menuitem" onclick="openmenuitems(50)"><a href="#" class="menuitemlink"> Day 20</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_50_1">Unit 1</a></div>
@@ -605,101 +269,13 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_50_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(51)"><a href="#" class="menuitemlink"> Map</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_51_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_51_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_51_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_51_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(52)"><a href="#" class="menuitemlink"> Finding Largest or Smallest Items</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_52_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_52_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_52_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_52_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(53)"><a href="#" class="menuitemlink"> Dictionary Multiple Key Sort</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_53_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_53_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_53_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_53_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(54)"><a href="#" class="menuitemlink"> Sorting Custom Objects</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_54_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_54_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_54_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_54_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(55)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_55_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_55_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_55_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_55_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(56)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_56_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_56_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_56_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_56_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(57)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_57_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_57_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_57_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_57_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(58)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_58_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_58_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_58_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_58_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(59)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_59_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_59_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_59_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_59_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(60)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_60_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_60_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_60_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_60_4">Unit 4</a></div>
-                    </div>
+               
                 </div>
 
                 <!-- Module 5 -->
                 <div id="mySidenav5" class="sidenav bg-pink-500">
                     <div class="menuitem" onclick="closeNav('mySidenav5')"><a href="javascript:void(0)" class="closebtn menuitemlink">&laquo; Back</a></div>
-                    <div class="menuitem" onclick="openmenuitems(61)"><a href="#" class="menuitemlink"> Getting Individual Channels</a></div>
+                    <div class="menuitem" onclick="openmenuitems(61)"><a href="#" class="menuitemlink"> Day 21</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_61_1">Unit 1</a></div>
@@ -708,7 +284,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_61_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(62)"><a href="#" class="menuitemlink"> Awesome Merge Effect</a></div>
+                    <div class="menuitem" onclick="openmenuitems(62)"><a href="#" class="menuitemlink"> Day 22</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_62_1">Unit 1</a></div>
@@ -717,7 +293,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_62_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(63)"><a href="#" class="menuitemlink"> Basic Transformations</a></div>
+                    <div class="menuitem" onclick="openmenuitems(63)"><a href="#" class="menuitemlink"> Day 23</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_63_1">Unit 1</a></div>
@@ -726,7 +302,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_63_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(64)"><a href="#" class="menuitemlink"> Modes and Filters</a></div>
+                    <div class="menuitem" onclick="openmenuitems(64)"><a href="#" class="menuitemlink"> Day 24</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_64_1">Unit 1</a></div>
@@ -735,7 +311,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_64_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(65)"><a href="#" class="menuitemlink"> Struct</a></div>
+                    <div class="menuitem" onclick="openmenuitems(65)"><a href="#" class="menuitemlink"> Day 25</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_65_1">Unit 1</a></div>
@@ -744,101 +320,14 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_65_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(66)"><a href="#" class="menuitemlink"> Map</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_66_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_66_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_66_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_66_4">Unit 4</a></div>
-                    </div>
 
-                    <div class="menuitem" onclick="openmenuitems(67)"><a href="#" class="menuitemlink"> Finding Largest or Smallest Items</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_67_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_67_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_67_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_67_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(68)"><a href="#" class="menuitemlink"> Dictionary Multiple Key Sort</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_68_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_68_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_68_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_68_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(69)"><a href="#" class="menuitemlink"> Sorting Custom Objects</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_69_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_69_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_69_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_69_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(70)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_70_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_70_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_70_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_70_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(71)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_71_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_71_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_71_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_71_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(72)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_72_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_72_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_72_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_72_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(73)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_73_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_73_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_73_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_73_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(74)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_74_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_74_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_74_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_74_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(75)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_75_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_75_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_75_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_75_4">Unit 4</a></div>
-                    </div>
+               
                 </div>
 
                 <!-- Module 6 -->
                 <div id="mySidenav6" class="sidenav bg-pink-500">
                     <div class="menuitem" onclick="closeNav('mySidenav6')"><a href="javascript:void(0)" class="closebtn menuitemlink">&laquo; Back</a></div>
-                    <div class="menuitem" onclick="openmenuitems(76)"><a href="#" class="menuitemlink"> Getting Individual Channels</a></div>
+                    <div class="menuitem" onclick="openmenuitems(76)"><a href="#" class="menuitemlink"> Day 26</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_76_1">Unit 1</a></div>
@@ -847,7 +336,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_76_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(77)"><a href="#" class="menuitemlink"> Awesome Merge Effect</a></div>
+                    <div class="menuitem" onclick="openmenuitems(77)"><a href="#" class="menuitemlink"> Day 27</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_77_1">Unit 1</a></div>
@@ -856,7 +345,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_77_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(78)"><a href="#" class="menuitemlink"> Basic Transformations</a></div>
+                    <div class="menuitem" onclick="openmenuitems(78)"><a href="#" class="menuitemlink"> Day 28</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_78_1">Unit 1</a></div>
@@ -865,7 +354,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_78_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(79)"><a href="#" class="menuitemlink"> Modes and Filters</a></div>
+                    <div class="menuitem" onclick="openmenuitems(79)"><a href="#" class="menuitemlink"> Day 29</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_79_1">Unit 1</a></div>
@@ -874,7 +363,7 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_79_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(80)"><a href="#" class="menuitemlink"> Struct</a></div>
+                    <div class="menuitem" onclick="openmenuitems(80)"><a href="#" class="menuitemlink"> Day 30</a></div>
                     <!-- Hidden Menu Items -->
                     <div class="menulinks">
                         <div class="btn" ><a href="python_80_1">Unit 1</a></div>
@@ -883,95 +372,6 @@ color: #f1f1f1;
                         <div class="btn" ><a href="python_80_4">Unit 4</a></div>
                     </div>
 
-                    <div class="menuitem" onclick="openmenuitems(81)"><a href="#" class="menuitemlink"> Map</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_81_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_81_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_81_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_81_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(82)"><a href="#" class="menuitemlink"> Finding Largest or Smallest Items</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_82_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_82_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_82_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_82_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(83)"><a href="#" class="menuitemlink"> Dictionary Multiple Key Sort</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_83_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_83_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_83_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_83_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(84)"><a href="#" class="menuitemlink"> Sorting Custom Objects</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_84_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_84_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_84_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_84_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(85)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_85_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_85_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_85_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_85_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(86)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_86_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_86_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_86_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_86_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(87)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_87_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_87_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_87_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_87_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(88)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_88_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_88_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_88_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_88_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(89)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_89_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_89_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_89_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_89_4">Unit 4</a></div>
-                    </div>
-
-                    <div class="menuitem" onclick="openmenuitems(90)"><a href="#" class="menuitemlink"> Strings</a></div>
-                    <!-- Hidden Menu Items -->
-                    <div class="menulinks">
-                        <div class="btn" ><a href="python_90_1">Unit 1</a></div>
-                        <div class="btn" ><a href="python_90_2">Unit 2</a></div>
-                        <div class="btn" ><a href="python_90_3">Unit 3</a></div>
-                        <div class="btn" ><a href="python_90_4">Unit 4</a></div>
-                    </div>
                 </div>
 
                 <div id="myrightside" class="rightside"> 
@@ -997,7 +397,7 @@ color: #f1f1f1;
                     </div>
                     <div id="lessonContainer" class="lesson-container">
                         <div class="bg-white " style="height: 40px; text-align: center; padding: 5px;">
-                            <a href="python_2">Introduction to Python &raquo;</a>
+                            <a href="#">Introduction to Embedded Systems &raquo;</a>
                         </div>
 
                         <!--Content-->
@@ -1006,17 +406,171 @@ color: #f1f1f1;
 
                             </div> -->
                             <div class="flex-child ">
-                                <h1> What is Python?</h1>
+                                <h1 class="course-header"> What is Embedded Systems?</h1>
+                                <hr class="course-header-line">
                                 <p>
-                                    Python is a programming language like C, C++, Ruby, Pearl, Swift, among many others.
-                                    If you are new to programming languages, you'll be wondering what this means. Not to worry,
-                                    In this course we will work through what a programming language is and what it does. Although, we will
-                                    not 
+                                    To understand Embedded C, we must first understand Embedded Systems. An Embedded System 
+                                    is a combination of electronic hardware usually a microcontroller or microprocessor and 
+                                    software interfaced with mechanical parts, sensors or actuators, to perform specific tasks.
+
+                                    There are so many Embedded Systems around us. Our printers, refrigerators, dish washers, 
+                                    computer mice, microwaves among many other devices.
                                 </p>
+                                <br/>
+                                <br/>
+
+
+                                <h2 class="course-header-2">General Purpose Vs Dedicated Systems</h2>
+                                <hr class="course-header-line-2">
+                                <p>
+                                    General Purpose systems are systems such as your personal computer. They perform all sorts
+                                    of tasks while Dedicated systems are the embedded systems described above.
+                                </p>
+                                <br/>
+                                <br/>
+                                <h1 class="course-header-2">Embedded Software</h1>
+                                <hr class="course-header-line-2">
+                                <p>
+                                    Embedded Software refers to the code written to interact with hardware. The code is usually written
+                                     in an IDE and uploaded to the memory of the micro-controller.
+                                </p>
+                                <br/>
+                                <br/>
+
+
+                                <h1 class="course-header-2">Embedded C</h1>
+                                <hr class="course-header-line-2">
+                                <p>Embedded C is a slight variation of C used to program microcontrollers and microprocessors.
+                                    It is very similar to C Programming Language.
+
+                                    <h2 class="course-header-2"> Embedded Programming Languages</h2> 
+                                    <hr class="course-header-line-2">
+                                    There are other programming languages used
+                                    programming embedded systems. Some of them are:
+                                    <ul>
+                                        <li>
+                                            <b>C++:</b> Apart from C, C++ is the most widely used programming language for microcontrollers.
+                                        </li>
+                                        <li>
+                                            <b>Rust:</b> 
+                                        </li>
+                                        <li>
+                                            <b>Java:</b>
+                                        </li>
+                                        <li>
+                                            <b>Python:</b> This is the most widely used programming language for microprocessors.
+                                        </li>
+                                        <li>
+                                            <b>Assembly:</b> This refers to low level programming language intended to communicate
+                                            directly with the hardware.
+                                        </li>
+                                    </ul>
+                                    <br/>
+                                    There are other programming languages that are used for programming embedded systems. 
+                                    Discussing them is beyond the scope of this course.
+                                </p>
+
                             </div>
 
                             <div class="flex-child">
+                                <h2 class="course-header-2">
+                                    Processors
+                                </h2>
+                                <hr class="course-header-line-2">
+                                <p>
+                                    There are several types of processors - microprocessors, microcontrollers, Digital Signal Processors(dsp),
+                                    Complex Programmable Logic Device or Field Programmable Gate Arrays(CPLD/FPGA), System-on-Chip(soc). 
+                                    general purpose processors such as Central Processing Unit(CPU) or Graphics Processing Unit(GPU),
+                                    Application Specific Integrated Circuit(ASIC).
 
+                                    <ol>
+                                       <li>
+                                            <b>Microprocessor:</b> A microprocessor is a data processing device that performs arithmetic and logic operations.
+                                            It requires external input and output peripherals.
+                                       </li> 
+                                       <li>
+                                            <b>Microcontroller:</b> A micro-controller comprises a microprocessor and other peripherals such as memory,
+                                            and Input and Output peripherals on a single chip. In a microcontroller, you cannot customize the peripherals.
+                                       </li>
+                                       <li>
+                                            <b>Complex Programmable Logic Devices:</b> CPLDs are not as complex as FPGAs but more complex than Simple 
+                                            Programmable Logic Devices. They are reconfigurable. This means that the peripherals can be customised.
+                                             CPLDs are control-oriented and can be used just as 
+                                            microcontrollers. These Devices can be programmed using Hardware Description Languages. There is no processor
+                                            core on the CPLD. The parts or blocks on a CPLD are:
+                                            <dd>
+                                                - Logic blocks
+                                            </dd>
+                                            <dd>
+                                                - I/O blocks
+                                            </dd>
+                                            <dd>
+                                                - Clock routing
+                                            </dd>
+                                            <dd>
+                                                - Routing matrix
+                                            </dd>
+                                            <dd>
+                                                - Memory: Non-volatile EEPROM memory
+                                            </dd>
+                                       </li>
+                                       <li>
+                                            <b>Field Programmable Gate Arrays:</b> These are integrated circuits that can be manipulated or configured by a
+                                            customer after manufacturing. This means they have customizable design to optimize design for speed and cost. These are data path-oriented and can perform complex mathematical calculations just 
+                                            as DSPs. FPGAs can be programmed using C programming language. FPGAs are fully parallel in implementation. The parts of an FPGA are:
+                                            <dd>
+                                                - Logic blocks
+                                            </dd>
+                                            <dd>
+                                                - I/O blocks
+                                            </dd>
+                                            <dd>
+                                                - Clock routing
+                                            </dd>
+                                            <dd>
+                                                - Routing matrix
+                                            </dd>
+                                            <dd>
+                                                - Memory
+                                            </dd>
+                                            <dd>
+                                                - Multipliers/DSP blocks
+                                            </dd>
+                                            <dd>
+                                                - Processor: There can be either soft or hard core on an FPGA. The soft core can be created using software
+                                                while the hard core is fabricated in the lab. Software can be used to create multiple cores.
+                                            </dd>
+                                            <br>
+                                            FPGAs have certain advantages over DSPs. Since they are reconfigurable, they can take up less space on boards(PCBs).
+                                       </li>
+                                       <li>
+                                            <b>Digital Signal Processors:</b> These are specialized microprocessors designed to processor real-world
+                                             signals like voice, audio, video, temperature, pressure, or position that have been converted to Digital
+                                             signals for mathematical manipulations. DSPs are specialized processors so they are sequential in nature.
+                                             They go through a fetch, decode and execute cycle.
+                                       </li>
+                                       <li>
+                                            <b>Central Processing Unit:</b> Central Processing Units are arithmetic and logic devices that
+                                            power your personal computers, laptops and desktops.
+                                       </li>
+                                       <li>
+                                            <b>Graphic Processing Unit:</b> These processors are dedicated for very large computations and can handle
+                                            specific tasks like performing computations on a lot of data or graphics. 
+                                       </li>
+                                       <li>
+                                            <b>System-on-Chip:</b> Mobile phones are a great example of System-on-chip. This means having two or more
+                                            on a single chip. On mobile phones, there can be different kinds of processors, CPU, GPU, DSP and etcetera.
+                                            When there are identical processors it is called symmetric with one operating system and a common shared memory.
+                                            A chip with different processors, instruction sets, different operating systems, and possibly without shared
+                                             memory is called Asymmetric. Examples: Snapdragon, Raspberry Pi
+                                       </li>
+                                       <li>
+                                            <b>Application Specific Integrated Circuits:</b>  These are special chips that are purpose-built for an application.
+                                            The function of the chip cannot be changed after it has been built. 
+                                       </li>
+                                    </ol>
+
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1054,90 +608,15 @@ color: #f1f1f1;
 
  <!-- Scripts
     ================================================== -->
-    <script src="{% static 'assets/js/tippy.all.min.js' %}"></script>  
+    <!-- <script src="{% static 'assets/js/tippy.all.min.js' %}"></script>  
     <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'assets/js/uikit.js' %}"></script>
     <script src="{% static 'assets/js/simplebar.js' %}"></script>
-    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script> -->
     <script src="{% static 'assets/js/myScript.js' %}"></script>
-
-    <script src="{% static '../../unpkg.com/ionicons%405.2.3/dist/ionicons.js' %}"></script>
-    <script>
-        function myFunction(x) {
-    x.classList.toggle("change");
-    if (document.getElementById("mySidenav").style.width == "250px") {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("mySidenav1").style.width = "0";
-      document.getElementById("mySidenav2").style.width = "0";
-      document.getElementById("mySidenav3").style.width = "0";
-      document.getElementById("mySidenav4").style.width = "0";
-      document.getElementById("mySidenav5").style.width = "0";
-      document.getElementById("mySidenav6").style.width = "0";
-      document.getElementById("myrightside").style.marginLeft = "0";
-      document.getElementById("lessonContainer").style.marginRight = "0";
-    } else {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("myrightside").style.marginLeft = "250px";
-      document.getElementById("lessonContainer").style.marginRight = "-250px";
-    }
-  //   document.getElementById("mySidenav").style.width = "250px";
-  //   ocument.getElementById("myrightside").style.marginLeft = "250px";
-  }
-
-  function openNav(x) {
-      document.getElementById(x).style.width = "250px";
-      // document.getElementById("myrightside").style.marginLeft = "250px";
-  }
+ 
 
 
-  function closeNav(x) {
-    document.getElementById(x).style.width = "0";
-    // document.getElementById("myrightside").style.marginLeft = "0";
-}
-
-function openmenuitems(n, cc){
-    var x = document.getElementsByClassName("menulinks")[n-1];
-    var y = x.cloneNode(true);
-    y.setAttribute("style", "height:auto; visibility: hidden;");
-    x.parentNode.appendChild(y);
-    var height = w3_getStyleValue(y, "height");
-    x.setAttribute("style", "height:" + height);
-    x.parentNode.removeChild(y);
-    if (!cc && w3_getStyleValue(x, "height") == height) { 
-        x.style.height = "0"; 
-        x.style.visibility = "hidden";
-    } else { 
-        closemenuitems();
-        x.style.height = height;
-        x.style.visibility = "visible";
-    }
-    // var x = document.getElementsByClassName("menulinks")[n-1];
-    // if (x.style.height == "none") {
-    //     x.style.display = "block";
-    // } else {
-    //     x.style.display = "none";
-    // }
-
-}
-
-function closemenuitems() {
-    var i, x = document.getElementsByClassName("menulinks"), l = x.length;
-    for (i = 0; i <l; i++) {
-        x[i].style.height = "0";
-        x[i].style.visibility = "hidden";
-    }
-}
-
-openmenuitems(exActiveNo, true);
-
-function w3_getStyleValue(elmnt,style) {
-    if (window.getComputedStyle) {
-        return window.getComputedStyle(elmnt,null).getPropertyValue(style);
-    } else {
-        return elmnt.currentStyle[style];
-    }
-}
-    </script>
 
 </body>
 
