@@ -1593,9 +1593,25 @@ def day_1(request):
     # write code to make sure this page is only returned after signin
     return render(request, 'intro.html')
 
+def day_1_2(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day__1_2.html')
+
 def day_2(request):
     # write code to make sure this page is only returned after signin
     return render(request, 'day_2_var.html')
+
+def day_2_2(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_2_2.html')
+
+def day_2_3(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_2_3.html')
+
+def day_2_4(request):
+    # write code to make sure this page is only returned after signin
+    return render(request, 'day_2_4.html')
 
 def day_3(request):
     # write code to make sure this page is only returned after signin

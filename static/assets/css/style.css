@@ -123,6 +123,7 @@ body{
   top: 105px; 
   overflow: scroll; 
   transition: 0.5s;
+  width: 100%;
 }
 
 .menulinks{

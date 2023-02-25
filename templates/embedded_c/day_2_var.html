@@ -397,7 +397,7 @@
                     </div>
                     <div id="lessonContainer" class="lesson-container">
                         <div class="bg-white " style="height: 40px; text-align: center; padding: 5px;">
-                            <a href="#">Introduction to Embedded Systems &raquo;</a>
+                            <a href="day_2_2">hello, World! &raquo;</a>
                         </div>
 
                         <!--Content-->
@@ -406,172 +406,120 @@
 
                             </div> -->
                             <div class="flex-child ">
-                                <h1 class="course-header"> What is Embedded Systems?</h1>
+                                <h1 class="course-header"> Hello, World!</h1>
                                 <hr class="course-header-line">
                                 <p>
-                                    To understand Embedded C, we must first understand Embedded Systems. An Embedded System 
-                                    is a combination of electronic hardware usually a microcontroller or microprocessor and 
-                                    software interfaced with mechanical parts, sensors or actuators, to perform specific tasks.
+                                    Every programming journey starts with the infamous "Hello, World!" program.
+                                    Ours is not going to be different. 
 
-                                    There are so many Embedded Systems around us. Our printers, refrigerators, dish washers, 
-                                    computer mice, microwaves among many other devices.
                                 </p>
                                 <br/>
                                 <br/>
-
-
-                                <h2 class="course-header-2">General Purpose Vs Dedicated Systems</h2>
+                                <h2 class="course-header-2">Hello, World! Program</h2>
                                 <hr class="course-header-line-2">
                                 <p>
-                                    General Purpose systems are systems such as your personal computer. They perform all sorts
-                                    of tasks while Dedicated systems are the embedded systems described above.
-                                </p>
+                                    Open any of the IDEs described in the previous chapter or any IDE you might be familiar with.
+                                        You could also use the compiler to the right to execute your code. Thanks to JDoodle for this wonderful
+                                        online compiler. Great job!
+                                    
+                                    <ol type="1">
+                                        
+                                        <li>
+                                            Using the compiler on the right enter the following code
+                                        </li>
+                                        <li>
+                                            Toggle the "interactive button" on the compiler to begin editing the code.
+                                        </li>
+                                        <li>
+                                            Type "#include <stdio.h>" followed by two line spaces
+                                        </li>
+                                        <li>
+                                            Type "int main()" followed by opening curly bracket "{", space in-between and then "}".
+                                        </li>
+                                        <li>
+                                            Then type "printf("Hello, world!");"
+                                        </li>
+                                        <li>
+                                        Then type "return 0;"
+                                        </li>
+                                    </ol>
                                 <br/>
                                 <br/>
-                                <h1 class="course-header-2">Embedded Software</h1>
+
+
+                                <h2 class="course-header-2">Structure of a C Program</h2>
                                 <hr class="course-header-line-2">
-                                <p>
-                                    Embedded Software refers to the code written to interact with hardware. The code is usually written
-                                     in an IDE and uploaded to the memory of the micro-controller.
+                                <p>C program basically consists of the following parts
+                                    <dl>
+                                        <dt>- Preprocessor Commands
+                                        </dt>
+                                        <dd>
+                                            Inbuilt
+                                        </dd>
+                                        <dd>
+                                            Userdefined
+                                        </dd>
+                                        <dt>
+                                        - Functions: The "int main() {}" is an example of a function. "printf()" is also an example
+                                        of a function. The "Hello, world!" is passed into the function and it is printed on the screen.
+                                        </dt>
+                                        <dt>
+                                        - Variables: There are no variables in this example but that will be discussed soon.
+                                        </dt>
+                                        <dt>
+                                        - Statements & Expressions: A statement is an instruction to a computer to perform a task. An
+                                        example of an expression is "printf("Hello, world!");". The instruction is that the computer should
+                                        print "Hello, world!" to the screen. A statement is succeeded by a semicolon.
+                                        </dt>
+                                        <dt>
+                                        - Comments: Comments are necessary in the good programming for proper documentation and maintenance.
+                                        </dt>
+                                    </dl>
+                                    
+                                     
+
+                                    
                                 </p>
                                 <br/>
                                 <br/>
-
-
-                                <h1 class="course-header-2">Embedded C</h1>
-                                <hr class="course-header-line-2">
-                                <p>Embedded C is a slight variation of C used to program microcontrollers and microprocessors.
-                                    It is very similar to C Programming Language.
-
-                                    <h2 class="course-header-2"> Embedded Programming Languages</h2> 
-                                    <hr class="course-header-line-2">
-                                    There are other programming languages used
-                                    programming embedded systems. Some of them are:
-                                    <ul>
-                                        <li>
-                                            <b>C++:</b> Apart from C, C++ is the most widely used programming language for microcontrollers.
-                                        </li>
-                                        <li>
-                                            <b>Rust:</b> 
-                                        </li>
-                                        <li>
-                                            <b>Java:</b>
-                                        </li>
-                                        <li>
-                                            <b>Python:</b> This is the most widely used programming language for microprocessors.
-                                        </li>
-                                        <li>
-                                            <b>Assembly:</b> This refers to low level programming language intended to communicate
-                                            directly with the hardware.
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                    There are other programming languages that are used for programming embedded systems. 
-                                    Discussing them is beyond the scope of this course.
-                                </p>
-
                             </div>
 
                             <div class="flex-child">
                                 <h2 class="course-header-2">
-                                    Processors
+                                    Code Execution
                                 </h2>
                                 <hr class="course-header-line-2">
-                                <p>
-                                    There are several types of processors - microprocessors, microcontrollers, Digital Signal Processors(dsp),
-                                    Complex Programmable Logic Device or Field Programmable Gate Arrays(CPLD/FPGA), System-on-Chip(soc). 
-                                    general purpose processors such as Central Processing Unit(CPU) or Graphics Processing Unit(GPU),
-                                    Application Specific Integrated Circuit(ASIC).
+                                <div data-pym-src='https://www.jdoodle.com/embed/v0/5ViP?stdin=1&arg=0'>
 
-                                    <ol>
-                                       <li>
-                                            <b>Microprocessor:</b> A microprocessor is a data processing device that performs arithmetic and logic operations.
-                                            It requires external input and output peripherals.
-                                       </li> 
-                                       <li>
-                                            <b>Microcontroller:</b> A micro-controller comprises a microprocessor and other peripherals such as memory,
-                                            and Input and Output peripherals on a single chip. In a microcontroller, you cannot customize the peripherals.
-                                       </li>
-                                       <li>
-                                            <b>Complex Programmable Logic Devices:</b> CPLDs are not as complex as FPGAs but more complex than Simple 
-                                            Programmable Logic Devices. They are reconfigurable. This means that the peripherals can be customised.
-                                             CPLDs are control-oriented and can be used just as 
-                                            microcontrollers. These Devices can be programmed using Hardware Description Languages. There is no processor
-                                            core on the CPLD. The parts or blocks on a CPLD are:
-                                            <dd>
-                                                - Logic blocks
-                                            </dd>
-                                            <dd>
-                                                - I/O blocks
-                                            </dd>
-                                            <dd>
-                                                - Clock routing
-                                            </dd>
-                                            <dd>
-                                                - Routing matrix
-                                            </dd>
-                                            <dd>
-                                                - Memory: Non-volatile EEPROM memory
-                                            </dd>
-                                       </li>
-                                       <li>
-                                            <b>Field Programmable Gate Arrays:</b> These are integrated circuits that can be manipulated or configured by a
-                                            customer after manufacturing. This means they have customizable design to optimize design for speed and cost. These are data path-oriented and can perform complex mathematical calculations just 
-                                            as DSPs. FPGAs can be programmed using C programming language. FPGAs are fully parallel in implementation. The parts of an FPGA are:
-                                            <dd>
-                                                - Logic blocks
-                                            </dd>
-                                            <dd>
-                                                - I/O blocks
-                                            </dd>
-                                            <dd>
-                                                - Clock routing
-                                            </dd>
-                                            <dd>
-                                                - Routing matrix
-                                            </dd>
-                                            <dd>
-                                                - Memory
-                                            </dd>
-                                            <dd>
-                                                - Multipliers/DSP blocks
-                                            </dd>
-                                            <dd>
-                                                - Processor: There can be either soft or hard core on an FPGA. The soft core can be created using software
-                                                while the hard core is fabricated in the lab. Software can be used to create multiple cores.
-                                            </dd>
-                                            <br>
-                                            FPGAs have certain advantages over DSPs. Since they are reconfigurable, they can take up less space on boards(PCBs).
-                                       </li>
-                                       <li>
-                                            <b>Digital Signal Processors:</b> These are specialized microprocessors designed to processor real-world
-                                             signals like voice, audio, video, temperature, pressure, or position that have been converted to Digital
-                                             signals for mathematical manipulations. DSPs are specialized processors so they are sequential in nature.
-                                             They go through a fetch, decode and execute cycle.
-                                       </li>
-                                       <li>
-                                            <b>Central Processing Unit:</b> Central Processing Units are arithmetic and logic devices that
-                                            power your personal computers, laptops and desktops.
-                                       </li>
-                                       <li>
-                                            <b>Graphic Processing Unit:</b> These processors are dedicated for very large computations and can handle
-                                            specific tasks like performing computations on a lot of data or graphics. 
-                                       </li>
-                                       <li>
-                                            <b>System-on-Chip:</b> Mobile phones are a great example of System-on-chip. This means having two or more
-                                            on a single chip. On mobile phones, there can be different kinds of processors, CPU, GPU, DSP and etcetera.
-                                            When there are identical processors it is called symmetric with one operating system and a common shared memory.
-                                            A chip with different processors, instruction sets, different operating systems, and possibly without shared
-                                             memory is called Asymmetric. Examples: Snapdragon, Raspberry Pi
-                                       </li>
-                                       <li>
-                                            <b>Application Specific Integrated Circuits:</b>  These are special chips that are purpose-built for an application.
-                                            The function of the chip cannot be changed after it has been built. 
-                                       </li>
+                                </div>
+                                <!-- <div data-pym-src='https://www.jdoodle.com/plugin' data-language="java"
+                                    data-version-index="4" data-libs="mavenlib1, mavenlib2">
+                                    Optional default code goes here
+                                </div> -->
+                                <div>
+                                    <h2 class="course-header-2">Exercise</h2>
+                                    <hr class="course-header-line-2">
+                                    <ol type="1">
+                                        <li>
+                                            Add a second printf() statement to the main() function. 
+                                            In the second printf() statement, add "This is my second program."
+                                            Remember to add a semicolon(;) at the end. Observe the output.
+                                        </li>
+                                        <li>
+                                            Try adding a "\n" after "Hello, world!" like this "Hello, world! \n".
+                                            Observe the output. The combination of the backward slash(\) and a character
+                                            such as "n" is called an escape sequence.
+                                        </li>
+                                        <li>
+                                            Try changing the words "Hello, world!" to something different and hit execute button. Practice and have fun.
+                                        </li>
                                     </ol>
+                                    
 
-                                </p>
+                                </div>
                             </div>
+                            
+
                         </div>
                     </div>
                 </div>
@@ -591,7 +539,7 @@
                             <a href="#"> Privacy</a>
                         </div>
                         <!-- <a href="python_1" class="previous prev_decoration">&laquo; Prev</a> -->
-                        <a href="python_2" class="previous prev_decoration">Next &raquo;</a>                        
+                        <a href="day_2_2" class="previous prev_decoration">Next &raquo;</a>                        
                         <!-- <div>
                             <button>prev</button>
                             <button>next</button>
@@ -614,6 +562,7 @@
     <script src="{% static 'assets/js/simplebar.js' %}"></script>
     <script src="{% static 'assets/js/custom.js' %}"></script> -->
     <script src="{% static 'assets/js/myScript.js' %}"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
  
 
 
